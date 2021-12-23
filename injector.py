@@ -6,7 +6,8 @@ import time
 
 target = sys.argv[1]
 port = sys.argv[2]
-payload_list = sys.argv[3]
+header = sys.argv[3]
+payload_list = sys.argv[4]
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -27,3 +28,4 @@ def send_payloads():
 
 if __name__ == '__main__':
     send_payloads()
+    print('\n')
